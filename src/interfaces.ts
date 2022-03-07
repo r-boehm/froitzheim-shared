@@ -1,4 +1,4 @@
-import { EmploymentType } from ".";
+import { EmploymentType } from '.'
 
 export interface Page {
     title: string

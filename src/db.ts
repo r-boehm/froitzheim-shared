@@ -1,4 +1,4 @@
-import { EmploymentType, Gender } from "./types";
+import { EmploymentType, Gender } from './types'
 
 export interface Person {
     person_id: string,
