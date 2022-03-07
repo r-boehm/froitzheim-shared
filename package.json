@@ -1,0 +1,15 @@
+{
+  "name": "shared",
+  "version": "1.0.0",
+  "description": "Can log \"hello world\" and \"goodbye world\" to the console!",
+  "main": "dist/index.js",
+  "scripts": {
+    "compile": "tsc && npm run linkBackend && npm run linkFrontend",
+    "linkBackend": "cd ../backend && npm link ../shared",
+    "linkFrontend": "cd ../frontend && npm link ../shared"
+  },
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ]
+}
