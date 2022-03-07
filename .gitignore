@@ -10,7 +10,6 @@ swagger.json
 # compiled output
 dist
 node_modules
-shared
 
 # Logs
 logs
