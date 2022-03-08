@@ -1,4 +1,4 @@
-import { ChangeReason, InsurantType } from '.'
+import { ChangeReason, EmploymentType, InsurantType } from '.'
 import { Gender } from './types'
 
 export interface IPerson {
@@ -19,6 +19,7 @@ export interface IPerson {
     employments: IEmployment[];
     insurances: IInsurance[];
     child_entries: IPerson[];
+    terms: ITerms[];
 }
 
 export interface IEmployment {
@@ -73,4 +74,26 @@ export interface ITerms {
     person: number;
     date: Date;
     data: string;
+}
+
+export interface IUser {
+    user_id: number;
+    name: string;
+    firstName: string;
+    postcode: string;
+    city: string;
+    street: string;
+    phone: string;
+    email: string;
+    iban: string;
+    bic: string;
+    employment_type: EmploymentType;
+    credentials: ICredentials;
+    terms: ITerms[];
+}
+
+export interface ICredentials {
+    person: number;
+    hash: string;
+    password: string;
 }
