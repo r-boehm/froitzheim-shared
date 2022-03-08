@@ -71,7 +71,7 @@ export interface IEmployer {
 }
 
 export interface ITerms {
-    person: number;
+    person_id: number;
     date: Date;
     data: string;
 }
