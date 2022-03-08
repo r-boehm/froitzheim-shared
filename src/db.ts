@@ -89,7 +89,6 @@ export interface IUser {
     bic: string;
     employment_type: EmploymentType;
     credentials: ICredentials;
-    terms: ITerms[];
 }
 
 export interface ICredentials {
