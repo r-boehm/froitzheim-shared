@@ -4,6 +4,20 @@ export enum Gender {
     Female = 2,
 }
 
+export enum FamilyStatus {
+    Unmarried = 0,
+    Married = 1,
+    Divorced = 2,
+    Widowed = 3
+}
+
+export enum Salary {
+    Undefined = 0,
+    Minijob = 1,
+    Default = 2,
+    OverThreshold
+}
+
 export enum EmploymentType {
     Unemployed = 0,
     Employed = 1,
