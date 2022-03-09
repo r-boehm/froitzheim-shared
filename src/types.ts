@@ -15,13 +15,19 @@ export enum Salary {
     Undefined = 0,
     Minijob = 1,
     Default = 2,
-    OverThreshold
+    OverThreshold = 3
 }
 
 export enum EmploymentType {
     Unemployed = 0,
     Employed = 1,
     External = 2,
+}
+
+export enum PastInsuranceRelation {
+   NotInsured = 0,
+   Insured = 1,
+   FamilyInsured = 2 
 }
 
 export enum InsurantType {
