@@ -2,97 +2,97 @@ import { ChangeReason, EmploymentType, InsurantType } from '.'
 import { Gender } from './types'
 
 export interface IPerson {
-    person_id: number | undefined;
-    name: string| undefined;
-    firstName: string| undefined;
-    birthday: Date| undefined;
-    gender: Gender| undefined;
-    postcode: string| undefined;
-    city: string| undefined;
-    street: string| undefined;
-    phone: string| undefined;
-    email: string| undefined;
-    parent_entry: IPerson| undefined;
-    iban: string| undefined;
-    bic: string| undefined;
-    pension_insurance_number: string| undefined;
-    employments: IEmployment[]| undefined;
-    insurances: IInsurance[]| undefined;
-    child_entries: IPerson[]| undefined;
-    terms: ITerms[]| undefined;
+    person_id: number | null;
+    name: string| null;
+    firstName: string| null;
+    birthday: Date| null;
+    gender: Gender| null;
+    postcode: string| null;
+    city: string| null;
+    street: string| null;
+    phone: string| null;
+    email: string| null;
+    parent_entry: IPerson| null;
+    iban: string| null;
+    bic: string| null;
+    pension_insurance_number: string| null;
+    employments: IEmployment[]| null;
+    insurances: IInsurance[]| null;
+    child_entries: IPerson[]| null;
+    terms: ITerms[]| null;
 }
 
 export interface IEmployment {
-    person: number;
-    employer: number;
-    start_date: Date;
-    end_date: Date;
-    salary: number;
+    person: number| null;
+    employer: number| null;
+    start_date: Date| null;
+    end_date: Date| null;
+    salary: number| null;
 }
 
 export interface IInsurance {
-    insurance_id: number;
-    name: string;
-    type: InsurantType;
-    insurance_number: string;
-    start_date: Date;
-    end_date: Date;
-    person: IPerson;
+    insurance_id: number| null;
+    name: string| null;
+    type: InsurantType| null;
+    insurance_number: string| null;
+    start_date: Date| null;
+    end_date: Date| null;
+    person: IPerson| null;
 }
 
 export interface IReferer {
-    person: number;
-    vat: string;
-    tax_number: string;
-    Applications: IApplication[];
+    person: number| null;
+    vat: string| null;
+    tax_number: string| null;
+    Applications: IApplication[]| null;
 }
 
 export interface IApplication {
-    application_id: number;
-    person: number;
-    insurance: number;
-    start_date: Date;
-    creation_date: Date;
-    reason: ChangeReason;
-    serialized: string;
-    referers: IReferer[];
+    application_id: number| null;
+    person: number| null;
+    insurance: number| null;
+    start_date: Date| null;
+    creation_date: Date| null;
+    reason: ChangeReason| null;
+    serialized: string| null;
+    referers: IReferer[]| null;
 }
 
 
 export interface IEmployer {
-    employer_id: number;
-    name: string;
-    city: string;
-    postcode: string;
-    street: string;
-    phone: string;
-    email: string;
-    employments: IEmployment[];
+    employer_id: number| null;
+    name: string| null;
+    city: string| null;
+    postcode: string| null;
+    street: string| null;
+    phone: string| null;
+    email: string| null;
+    employments: IEmployment[]| null;
 }
 
 export interface ITerms {
-    person_id: number;
-    date: Date;
-    data: string;
+    person_id: number| null;
+    date: Date| null;
+    data: string| null;
 }
 
 export interface IUser {
-    user_id: number;
-    name: string;
-    firstName: string;
-    postcode: string;
-    city: string;
-    street: string;
-    phone: string;
-    email: string;
-    iban: string;
-    bic: string;
-    employment_type: EmploymentType;
-    credentials: ICredentials;
+    user_id: number| null;
+    name: string| null;
+    firstName: string| null;
+    postcode: string| null;
+    city: string| null;
+    street: string| null;
+    phone: string| null;
+    email: string| null;
+    iban: string| null;
+    bic: string| null;
+    employment_type: EmploymentType| null;
+    credentials: ICredentials| null;
 }
 
 export interface ICredentials {
-    person: number;
-    hash: string;
-    password: string;
+    person: number| null;
+    hash: string| null;
+    password: string| null;
 }
