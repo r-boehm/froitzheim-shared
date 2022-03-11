@@ -2,24 +2,24 @@ import { ChangeReason, EmploymentType, InsurantType } from '.'
 import { Gender } from './types'
 
 export interface IPerson {
-    person_id: number;
-    name: string;
-    firstName: string;
-    birthday: Date;
-    gender: Gender;
-    postcode: string;
-    city: string;
-    street: string;
-    phone: string;
-    email: string;
-    parent_entry: IPerson;
-    iban: string;
-    bic: string;
-    pension_insurance_number: string;
-    employments: IEmployment[];
-    insurances: IInsurance[];
-    child_entries: IPerson[];
-    terms: ITerms[];
+    person_id: number | undefined;
+    name: string| undefined;
+    firstName: string| undefined;
+    birthday: Date| undefined;
+    gender: Gender| undefined;
+    postcode: string| undefined;
+    city: string| undefined;
+    street: string| undefined;
+    phone: string| undefined;
+    email: string| undefined;
+    parent_entry: IPerson| undefined;
+    iban: string| undefined;
+    bic: string| undefined;
+    pension_insurance_number: string| undefined;
+    employments: IEmployment[]| undefined;
+    insurances: IInsurance[]| undefined;
+    child_entries: IPerson[]| undefined;
+    terms: ITerms[]| undefined;
 }
 
 export interface IEmployment {
