@@ -56,7 +56,7 @@ export interface IApplication {
     creation_date: Date | null;
     reason: ChangeReason | null;
     serialized: string | null;
-    referers: IReferer[] | null;
+    referers?: IReferer[] | null;
 }
 
 
@@ -68,7 +68,7 @@ export interface IEmployer {
     street: string | null;
     phone: string | null;
     email: string | null;
-    employments: IEmployment[] | null;
+    employments?: IEmployment[] | null;
 }
 
 export interface ITerms {
