@@ -13,14 +13,14 @@ export interface IPerson {
     street: string | null;
     phone: string | null;
     email: string | null;
-    parent_entry: IPerson | null;
     iban: string | null;
     bic: string | null;
-    pension_insurance_number: string | null;
-    employments: IEmployment[] | null;
-    insurances: IInsurance[] | null;
-    child_entries: IPerson[] | null;
-    terms: ITerms[] | null;
+    parent_entry?: IPerson | null;
+    pension_insurance_number?: string | null;
+    employments?: IEmployment[] | null;
+    insurances?: IInsurance[] | null;
+    child_entries?: IPerson[] | null;
+    terms?: ITerms[] | null;
 }
 
 export interface IEmployment {
@@ -45,12 +45,12 @@ export interface IReferer {
     person: number | null;
     vat: string | null;
     tax_number: string | null;
-    Applications: IApplication[] | null;
+    Applications?: IApplication[] | null;
 }
 
 export interface IApplication {
     application_id: number | null;
-    person: number | null;
+    person_id: number | null;
     insurance: number | null;
     start_date: Date | null;
     creation_date: Date | null;
