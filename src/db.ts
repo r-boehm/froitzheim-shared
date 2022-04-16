@@ -38,7 +38,7 @@ export interface IInsurance {
     type: InsurantType | null;
     insurance_number: string | null;
     start_date: Date | null;
-    end_date: Date | null;
+    end_date?: Date | null;
     person: IPerson | null;
 }
 
