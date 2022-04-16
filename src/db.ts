@@ -21,6 +21,7 @@ export interface IPerson {
     insurances?: IInsurance[] | null;
     child_entries?: IPerson[] | null;
     terms?: ITerms[] | null;
+    applications?: IApplication[] | null;
 }
 
 export interface IEmployment {
