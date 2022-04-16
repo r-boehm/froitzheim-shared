@@ -39,7 +39,8 @@ export interface IInsurance {
     insurance_number: string | null;
     start_date: Date | null;
     end_date?: Date | null;
-    person: IPerson | null;
+    person_id: number | null;
+    application_id?: number | null;
 }
 
 export interface IReferer {
@@ -52,12 +53,12 @@ export interface IReferer {
 export interface IApplication {
     application_id: number | null;
     person_id: number | null;
-    insurance: number | null;
     start_date: Date | null;
     creation_date: Date | null;
     reason: ChangeReason | null;
     serialized: string | null;
     referers?: IReferer[] | null;
+    insurance?: IInsurance | null;
 }
 
 
