@@ -57,7 +57,7 @@ export interface IApplication {
     start_date: Date | null;
     creation_date: Date | null;
     reason: ChangeReason | null;
-    serialized: string | null;
+    serialized?: string;
     referers?: IReferer[] | null;
     insurance?: IInsurance | null;
 }
