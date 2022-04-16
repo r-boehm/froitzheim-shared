@@ -26,7 +26,8 @@ export interface IPerson {
 
 export interface IEmployment {
     person: number | null;
-    employer: number | null;
+    employer_id: number | null;
+    employer: IEmployer | null;
     start_date: Date | null;
     end_date: Date | null;
     salary: number | null;
@@ -40,7 +41,7 @@ export interface IInsurance {
     start_date: Date | null;
     end_date?: Date | null;
     person_id: number | null;
-    application_id?: number | null;
+    application?: IApplication | null;
 }
 
 export interface IReferer {
