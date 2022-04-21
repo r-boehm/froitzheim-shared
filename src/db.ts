@@ -26,7 +26,6 @@ export interface IPerson {
 
 export interface IEmployment {
     person: number | null;
-    employer_id: number | null;
     employer: IEmployer | null;
     start_date: Date | null;
     end_date: Date | null;
