@@ -15,6 +15,9 @@ export interface IPerson {
     email: string | null;
     iban: string | null;
     bic: string | null;
+}
+
+export interface ICustomer extends IPerson {
     parent_entry?: IPerson | null;
     pension_insurance_number?: string | null;
     employments?: IEmployment[] | null;
@@ -43,11 +46,10 @@ export interface IInsurance {
     application?: IApplication | null;
 }
 
-export interface IReferer {
-    person: number | null;
+export interface IReferer extends IPerson {
     vat: string | null;
     tax_number: string | null;
-    Applications?: IApplication[] | null;
+    applications?: IApplication[] | null;
 }
 
 export interface IApplication {
