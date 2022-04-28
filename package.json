@@ -1,6 +1,6 @@
 {
   "name": "froitzheim-shared",
-  "version": "1.0.24",
+  "version": "1.0.25",
   "description": "Can log \"hello world\" and \"goodbye world\" to the console!",
   "main": "dist/index.js",
   "scripts": {

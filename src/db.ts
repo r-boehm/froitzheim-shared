@@ -54,7 +54,7 @@ export interface IReferer extends IPerson {
 
 export interface IApplication {
     application_id: number | null;
-    person_id: number | null;
+    person: IPerson | null;
     start_date: Date | null;
     creation_date: Date | null;
     reason: ChangeReason | null;
