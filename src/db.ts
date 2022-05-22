@@ -63,8 +63,12 @@ export interface IApplication {
     referers?: IReferer[] | null;
     insurance?: IInsurance | null;
     insurantType?: InsurantType | null;
+    healthInsurance?: HealthInsurance
 }
-
+export interface HealthInsurance {
+    id: number,
+    name: string
+}
 
 export interface IEmployer {
     employer_id: number | null;

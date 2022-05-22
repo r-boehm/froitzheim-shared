@@ -40,6 +40,7 @@ export interface IInsurance {
     end_date?: Date | null;
     person_id: number | null;
     application?: IApplication | null;
+    data?: any;
 }
 export interface IReferer extends IPerson {
     vat: string | null;
@@ -56,6 +57,11 @@ export interface IApplication {
     referers?: IReferer[] | null;
     insurance?: IInsurance | null;
     insurantType?: InsurantType | null;
+    healthInsurance?: HealthInsurance;
+}
+export interface HealthInsurance {
+    id: number;
+    name: string;
 }
 export interface IEmployer {
     employer_id: number | null;
