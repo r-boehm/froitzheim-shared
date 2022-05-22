@@ -1,6 +1,11 @@
 import { ChangeReason, EmploymentType, InsurantType } from '.';
+import { HealthInsurance } from './interfaces';
 import { Gender } from './types';
-export interface IPerson {
+export interface BaseEntity {
+    created_at: Date;
+    updated_at: Date;
+}
+export interface IPerson extends BaseEntity {
     person_id: number | null;
     name: string | null;
     firstName: string | null;
@@ -24,14 +29,14 @@ export interface ICustomer extends IPerson {
     terms?: ITerms[] | null;
     applications?: IApplication[] | null;
 }
-export interface IEmployment {
+export interface IEmployment extends BaseEntity {
     person: number | null;
     employer: IEmployer | null;
     start_date: Date | null;
     end_date: Date | null;
     salary: number | null;
 }
-export interface IInsurance {
+export interface IInsurance extends BaseEntity {
     insurance_id: number | null;
     name: string | null;
     type: InsurantType | null;
@@ -47,7 +52,7 @@ export interface IReferer extends IPerson {
     tax_number: string | null;
     applications?: IApplication[] | null;
 }
-export interface IApplication {
+export interface IApplication extends BaseEntity {
     application_id: number | null;
     person: IPerson | null;
     start_date: Date | null;
@@ -59,11 +64,7 @@ export interface IApplication {
     insurantType?: InsurantType | null;
     healthInsurance?: HealthInsurance;
 }
-export interface HealthInsurance {
-    id: number;
-    name: string;
-}
-export interface IEmployer {
+export interface IEmployer extends BaseEntity {
     employer_id: number | null;
     name: string | null;
     city: string | null;
@@ -73,12 +74,12 @@ export interface IEmployer {
     email: string | null;
     employments?: IEmployment[] | null;
 }
-export interface ITerms {
+export interface ITerms extends BaseEntity {
     person_id: number | null;
     date: Date | null;
     data: string | null;
 }
-export interface IUser {
+export interface IUser extends BaseEntity {
     user_id: number | null;
     name: string | null;
     firstName: string | null;
@@ -92,7 +93,7 @@ export interface IUser {
     employment_type: EmploymentType | null;
     credentials: ICredentials | null;
 }
-export interface ICredentials {
+export interface ICredentials extends BaseEntity {
     person: number | null;
     hash: string | null;
     password: string | null;
