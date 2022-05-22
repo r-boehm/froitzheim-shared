@@ -61,6 +61,7 @@ export interface IApplication {
     serialized?: string;
     referers?: IReferer[] | null;
     insurance?: IInsurance | null;
+    insurantType?: InsurantType | null;
 }
 
 
