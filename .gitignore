@@ -8,7 +8,6 @@ swagger.json
 .angular
 
 # compiled output
-dist
 node_modules
 
 # Logs
