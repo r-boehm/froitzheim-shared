@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.PaymentState = exports.ChangeReason = exports.InsurantType = exports.PastInsuranceRelation = exports.EmploymentType = exports.Salary = exports.FamilyStatus = exports.Gender = void 0;
+exports.TermType = exports.PaymentState = exports.ChangeReason = exports.InsurantType = exports.PastInsuranceRelation = exports.EmploymentType = exports.Salary = exports.FamilyStatus = exports.Gender = void 0;
 var Gender;
 (function (Gender) {
     Gender[Gender["Other"] = 0] = "Other";
@@ -61,3 +61,9 @@ var PaymentState;
     PaymentState[PaymentState["PaidOut"] = 2] = "PaidOut";
     PaymentState[PaymentState["Refunded"] = 3] = "Refunded";
 })(PaymentState = exports.PaymentState || (exports.PaymentState = {}));
+var TermType;
+(function (TermType) {
+    TermType[TermType["All"] = 0] = "All";
+    TermType[TermType["User"] = 1] = "User";
+    TermType[TermType["Customer"] = 2] = "Customer";
+})(TermType = exports.TermType || (exports.TermType = {}));

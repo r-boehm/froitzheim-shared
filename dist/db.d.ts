@@ -1,6 +1,6 @@
 import { ChangeReason, EmploymentType, InsurantType } from '.';
 import { HealthInsurance, Payment } from './interfaces';
-import { Gender } from './types';
+import { Gender, TermType } from './types';
 export interface BaseEntity {
     created_at: Date;
     updated_at: Date;
@@ -76,9 +76,12 @@ export interface IEmployer extends BaseEntity {
     employments?: IEmployment[] | null;
 }
 export interface ITerms extends BaseEntity {
-    person_id: number | null;
     date: Date | null;
     data: string | null;
+    users: IUser[];
+    customers: ICustomer[];
+    type: TermType;
+    optional: boolean;
 }
 export interface IUser extends BaseEntity {
     user_id: number | null;

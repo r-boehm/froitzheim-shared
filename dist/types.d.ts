@@ -50,4 +50,9 @@ export declare enum PaymentState {
     PaidOut = 2,
     Refunded = 3
 }
+export declare enum TermType {
+    All = 0,
+    User = 1,
+    Customer = 2
+}
 export declare type Email = string;
