@@ -25,9 +25,9 @@ export enum EmploymentType {
 }
 
 export enum PastInsuranceRelation {
-   NotInsured = 0,
-   Insured = 1,
-   FamilyInsured = 2 
+    NotInsured = 0,
+    Insured = 1,
+    FamilyInsured = 2
 }
 
 export enum InsurantType {
@@ -49,6 +49,13 @@ export enum ChangeReason {
     Undefined = 0,
     ChangeInsuranceRelationship = 1,
     ExpirationCommitmentPeriod = 2,
+}
+
+export enum PaymentState {
+    Open = 0,
+    PaidIn = 1,
+    PaidOut = 2,
+    Refunded = 3,
 }
 
 export type Email = string;

@@ -1,5 +1,5 @@
 import { ChangeReason, EmploymentType, InsurantType } from '.'
-import { HealthInsurance } from './interfaces';
+import { HealthInsurance, Payment } from './interfaces';
 import { Gender } from './types'
 
 export interface BaseEntity {
@@ -70,6 +70,7 @@ export interface IApplication extends BaseEntity {
     insurance?: IInsurance | null;
     insurantType?: InsurantType | null;
     healthInsurance?: HealthInsurance
+    payments: Payment[];
 }
 
 export interface IEmployer extends BaseEntity {

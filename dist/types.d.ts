@@ -44,4 +44,10 @@ export declare enum ChangeReason {
     ChangeInsuranceRelationship = 1,
     ExpirationCommitmentPeriod = 2
 }
+export declare enum PaymentState {
+    Open = 0,
+    PaidIn = 1,
+    PaidOut = 2,
+    Refunded = 3
+}
 export declare type Email = string;
