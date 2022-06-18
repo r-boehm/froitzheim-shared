@@ -106,7 +106,7 @@ export interface IUser extends BaseEntity {
 }
 
 export interface ICredentials extends BaseEntity {
-    person: number | null;
+    user: IUser | null;
     hash: string | null;
     password: string | null;
 }
