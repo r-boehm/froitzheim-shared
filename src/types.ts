@@ -58,4 +58,10 @@ export enum PaymentState {
     Refunded = 3,
 }
 
+export enum TermType {
+    All = 0,
+    User = 1,
+    Customer = 2,
+}
+
 export type Email = string;
