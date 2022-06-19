@@ -77,6 +77,7 @@ export interface IEmployer extends BaseEntity {
 }
 export interface ITerm extends BaseEntity {
     term_id?: number;
+    id?: number;
     title?: string;
     created_at?: Date;
     updated_at?: Date;
