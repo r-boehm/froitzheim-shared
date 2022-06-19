@@ -86,6 +86,7 @@ export interface ITerm extends BaseEntity {
     referers?: IReferer[];
     type?: TermType;
     optional?: boolean;
+    active?: boolean;
 }
 export interface IUser extends BaseEntity {
     user_id?: number;
