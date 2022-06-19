@@ -16,4 +16,5 @@ export interface HealthInsurance {
 export interface Payment {
     state: PaymentState;
     date: Date;
+    amount: number;
 }
