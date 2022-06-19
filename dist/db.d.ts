@@ -76,11 +76,13 @@ export interface IEmployer extends BaseEntity {
     employments?: IEmployment[] | null;
 }
 export interface ITerm extends BaseEntity {
-    date: Date | null;
-    title: string | null;
-    data: string | null;
+    term_id: number;
+    title: string;
+    date: Date;
+    data: string;
     users: IUser[];
     persons: IPerson[];
+    referers: IReferer[];
     type: TermType;
     optional: boolean;
 }

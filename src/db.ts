@@ -85,13 +85,15 @@ export interface IEmployer extends BaseEntity {
 }
 
 export interface ITerm extends BaseEntity {
-    date: Date | null;
-    title: string | null;
-    data: string | null;
+    term_id: number;
+    title: string;
+    date: Date;
+    data: string;
     users: IUser[];
     persons: IPerson[];
+    referers: IReferer[];
     type: TermType;
-    optional: boolean
+    optional: boolean;
 }
 
 export interface IUser extends BaseEntity {
