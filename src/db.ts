@@ -29,7 +29,7 @@ export interface ICustomer extends IPerson {
     employments?: IEmployment[] | null;
     insurances?: IInsurance[] | null;
     child_entries?: IPerson[] | null;
-    terms?: ITerms[] | null;
+    terms?: ITerm[] | null;
     applications?: IApplication[] | null;
 }
 
@@ -84,8 +84,9 @@ export interface IEmployer extends BaseEntity {
     employments?: IEmployment[] | null;
 }
 
-export interface ITerms extends BaseEntity {
+export interface ITerm extends BaseEntity {
     date: Date | null;
+    title: string | null;
     data: string | null;
     users: IUser[];
     customers: ICustomer[];
