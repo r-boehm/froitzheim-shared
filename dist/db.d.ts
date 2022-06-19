@@ -38,9 +38,9 @@ export interface IEmployment extends BaseEntity {
 }
 export interface IInsurance extends BaseEntity {
     insurance_id: number | null;
-    name: string | null;
+    healthInsurance?: HealthInsurance;
     type: InsurantType | null;
-    insurance_number: string | null;
+    insurance_number?: string | null;
     start_date: Date | null;
     end_date?: Date | null;
     person_id: number | null;
@@ -60,9 +60,8 @@ export interface IApplication extends BaseEntity {
     reason: ChangeReason | null;
     serialized?: string;
     referers?: IReferer[] | null;
+    previousInsurance?: IInsurance | null;
     insurance?: IInsurance | null;
-    insurantType?: InsurantType | null;
-    healthInsurance?: HealthInsurance;
     payments: Payment[];
 }
 export interface IEmployer extends BaseEntity {
