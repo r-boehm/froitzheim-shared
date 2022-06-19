@@ -58,6 +58,7 @@ export interface IReferer extends IPerson {
     vat?: string;
     tax_number?: string;
     applications?: IApplication[];
+    referal?: string;
 }
 
 export interface IApplication extends BaseEntity {
