@@ -3,116 +3,116 @@ import { HealthInsurance, Payment } from './interfaces';
 import { Gender, TermType } from './types'
 
 export interface BaseEntity {
-    created_at: Date;
-    updated_at: Date;
+    created_at?: Date;
+    updated_at?: Date;
 }
 
 export interface IPerson extends BaseEntity {
-    person_id: number | null;
-    name: string | null;
-    firstName: string | null;
-    birthday: Date | null;
-    birthdayLongDate?: string | null;
-    gender: Gender | null;
-    postcode: string | null;
-    city: string | null;
-    street: string | null;
-    phone: string | null;
-    email: string | null;
-    iban: string | null;
-    bic: string | null;
+    person_id?: number;
+    name?: string;
+    firstName?: string;
+    birthday?: Date;
+    birthdayLongDate?: string;
+    gender?: Gender;
+    postcode?: string;
+    city?: string;
+    street?: string;
+    phone?: string;
+    email?: string;
+    iban?: string;
+    bic?: string;
 }
 
 export interface ICustomer extends IPerson {
-    parent_entry?: IPerson | null;
-    pension_insurance_number?: string | null;
-    employments?: IEmployment[] | null;
-    insurances?: IInsurance[] | null;
-    child_entries?: IPerson[] | null;
-    terms?: ITerm[] | null;
-    applications?: IApplication[] | null;
+    parent_entry?: IPerson;
+    pension_insurance_number?: string;
+    employments?: IEmployment[];
+    insurances?: IInsurance[];
+    child_entries?: IPerson[];
+    terms?: ITerm[];
+    applications?: IApplication[];
 }
 
 export interface IEmployment extends BaseEntity {
-    person: number | null;
-    employer: IEmployer | null;
-    start_date: Date | null;
-    end_date: Date | null;
-    salary: number | null;
+    person?: number;
+    employer?: IEmployer;
+    start_date?: Date;
+    end_date?: Date;
+    salary?: number;
 }
 
 export interface IInsurance extends BaseEntity {
-    insurance_id: number | null;
+    insurance_id?: number;
     healthInsurance?: HealthInsurance
-    type: InsurantType | null;
-    insurance_number?: string | null;
-    start_date: Date | null;
-    end_date?: Date | null;
-    person_id: number | null;
-    application?: IApplication | null;
-    applicationIsPrevious?: IApplication | null;
+    type?: InsurantType;
+    insurance_number?: string;
+    start_date?: Date;
+    end_date?: Date;
+    person_id?: number;
+    application?: IApplication;
+    applicationIsPrevious?: IApplication;
     data?: any
 }
 
 export interface IReferer extends IPerson {
-    vat: string | null;
-    tax_number: string | null;
-    applications?: IApplication[] | null;
+    vat?: string;
+    tax_number?: string;
+    applications?: IApplication[];
 }
 
 export interface IApplication extends BaseEntity {
-    application_id: number | null;
-    person: IPerson | null;
-    start_date: Date | null;
-    creation_date: Date | null;
-    reason: ChangeReason | null;
+    application_id?: number;
+    person?: IPerson;
+    start_date?: Date;
+    creation_date?: Date;
+    reason?: ChangeReason;
     serialized?: string;
-    referers?: IReferer[] | null;
-    previousInsurance?: IInsurance | null;
-    insurance?: IInsurance | null;
-    payments: Payment[];
+    referers?: IReferer[];
+    previousInsurance?: IInsurance;
+    insurance?: IInsurance;
+    payments?: Payment[];
 }
 
 export interface IEmployer extends BaseEntity {
-    employer_id: number | null;
-    name: string | null;
-    city: string | null;
-    postcode: string | null;
-    street: string | null;
-    phone: string | null;
-    email: string | null;
-    employments?: IEmployment[] | null;
+    employer_id?: number;
+    name?: string;
+    city?: string;
+    postcode?: string;
+    street?: string;
+    phone?: string;
+    email?: string;
+    employments?: IEmployment[];
 }
 
 export interface ITerm extends BaseEntity {
-    term_id: number;
-    title: string;
-    date: Date;
-    data: string;
-    users: IUser[];
-    persons: IPerson[];
-    referers: IReferer[];
-    type: TermType;
-    optional: boolean;
+    term_id?: number;
+    title?: string;
+    date?: Date;
+    data?: string;
+    users?: IUser[];
+    persons?: IPerson[];
+    referers?: IReferer[];
+    type?: TermType;
+    optional?: boolean;
 }
 
 export interface IUser extends BaseEntity {
-    user_id: number | null;
-    name: string | null;
-    firstName: string | null;
-    postcode: string | null;
-    city: string | null;
-    street: string | null;
-    phone: string | null;
-    email: string | null;
-    iban: string | null;
-    bic: string | null;
-    employment_type: EmploymentType | null;
-    credentials: ICredentials | null;
+    user_id?: number;
+    name?: string;
+    firstName?: string;
+    postcode?: string;
+    city?: string;
+    street?: string;
+    phone?: string;
+    email?: string;
+    iban?: string;
+    bic?: string;
+    employment_type?: EmploymentType;
+    credentials?: ICredentials;
 }
 
 export interface ICredentials extends BaseEntity {
-    user: IUser | null;
-    hash: string | null;
-    password: string | null;
+    user?: IUser;
+    hash?: string;
+    password?: string;
 }
