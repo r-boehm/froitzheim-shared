@@ -80,7 +80,7 @@ export interface ITerm extends BaseEntity {
     title: string | null;
     data: string | null;
     users: IUser[];
-    customers: ICustomer[];
+    persons: IPerson[];
     type: TermType;
     optional: boolean;
 }
