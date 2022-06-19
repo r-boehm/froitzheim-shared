@@ -45,6 +45,7 @@ export interface IInsurance extends BaseEntity {
     end_date?: Date | null;
     person_id: number | null;
     application?: IApplication | null;
+    applicationIsPrevious?: IApplication | null;
     data?: any;
 }
 export interface IReferer extends IPerson {
