@@ -43,7 +43,7 @@ export interface IInsurance extends BaseEntity {
     insurance_number?: string;
     start_date?: Date;
     end_date?: Date;
-    person_id?: number;
+    person?: IPerson;
     application?: IApplication;
     applicationIsPrevious?: IApplication;
     data?: any;
