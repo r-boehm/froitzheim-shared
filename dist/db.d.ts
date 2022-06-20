@@ -30,7 +30,7 @@ export interface ICustomer extends IPerson {
     applications?: IApplication[];
 }
 export interface IEmployment extends BaseEntity {
-    person?: number;
+    person?: IPerson;
     employer?: IEmployer;
     start_date?: Date;
     end_date?: Date;
