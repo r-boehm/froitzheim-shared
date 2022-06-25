@@ -43,7 +43,7 @@ export interface IEmployment extends BaseEntity {
 
 export interface IInsurance extends BaseEntity {
     insurance_id?: number;
-    healthInsurance?: HealthInsurance
+    healthInsurance?: number
     type?: InsurantType;
     insurance_number?: string;
     start_date?: Date;
