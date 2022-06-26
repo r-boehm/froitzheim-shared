@@ -1,6 +1,5 @@
 import { ChangeReason, EmploymentType, InsurantType } from '.';
-import { Payment } from './interfaces';
-import { Gender, TermType } from './types';
+import { Gender, PaymentState, TermType } from './types';
 export interface BaseEntity {
     created_at?: Date;
     updated_at?: Date;
@@ -64,7 +63,7 @@ export interface IApplication extends BaseEntity {
     referers?: IReferer[];
     previousInsurance?: IInsurance;
     insurance?: IInsurance;
-    payments?: Payment[];
+    payments?: IPayment[];
 }
 export interface IEmployer extends BaseEntity {
     employer_id?: number;
@@ -108,4 +107,9 @@ export interface ICredentials extends BaseEntity {
     user?: IUser;
     hash?: string;
     password?: string;
+}
+export interface IPayment {
+    state: PaymentState;
+    date: Date;
+    amount: number;
 }
