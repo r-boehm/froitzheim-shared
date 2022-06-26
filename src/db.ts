@@ -121,6 +121,7 @@ export interface ICredentials extends BaseEntity {
 }
 
 export interface IPayment {
+    payment_id?: number;
     state: PaymentState;
     date: Date;
     amount: number;
