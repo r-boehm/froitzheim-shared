@@ -58,6 +58,7 @@ export interface IReferer extends IPerson {
     tax_number?: string;
     applications?: IApplication[];
     referal?: string;
+    parent?: IReferer;
 }
 
 export interface IApplication extends BaseEntity {
