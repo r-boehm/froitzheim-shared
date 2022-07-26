@@ -53,6 +53,7 @@ export interface IReferer extends IPerson {
     applications?: IApplication[];
     referal?: string;
     parent?: IReferer;
+    children: IReferer[];
 }
 export interface IApplication extends BaseEntity {
     application_id?: number;
