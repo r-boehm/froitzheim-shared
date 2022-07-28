@@ -69,7 +69,7 @@ export interface IApplication extends BaseEntity {
     creation_date?: Date;
     reason?: ChangeReason;
     serialized?: string;
-    referers?: IReferer[];
+    referer?: IReferer;
     previousInsurance?: IInsurance;
     insurance?: IInsurance;
     payments?: IPayment[];
