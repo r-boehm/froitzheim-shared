@@ -140,4 +140,8 @@ export interface PayoutData {
     value: number;
 }
 
-export type SettingKey = "LastExport" | "Payout"
+export enum SettingKey {
+    "Undefined",
+    "LastExport",
+    "Payout",
+}
