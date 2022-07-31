@@ -136,9 +136,7 @@ export interface ISetting {
 }
 
 export interface PayoutData {
-    entry: {
-        [year: number]: number;
-    }
+    [year: number]: number
 }
 
 export enum SettingKey {

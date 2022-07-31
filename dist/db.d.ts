@@ -123,9 +123,7 @@ export interface ISetting {
     data: any;
 }
 export interface PayoutData {
-    entry: {
-        [year: number]: number;
-    };
+    [year: number]: number;
 }
 export declare enum SettingKey {
     "Undefined" = 0,
