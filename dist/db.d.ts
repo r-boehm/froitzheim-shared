@@ -116,3 +116,14 @@ export interface IPayment {
     date: Date;
     amount: number;
 }
+export interface ISetting {
+    id?: number;
+    key: SettingKey;
+    person?: IPerson;
+    data: any;
+}
+export interface PayoutData {
+    year: number;
+    value: number;
+}
+export declare type SettingKey = "LastExport" | "Payout";
