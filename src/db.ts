@@ -1,5 +1,5 @@
 import { ChangeReason, EmploymentType, InsurantType } from '.'
-import { Gender, PaymentState, TermType } from './types'
+import { Gender, PaymentState, PastInsuranceRelation, TermType } from './types'
 
 export interface BaseEntity {
     created_at?: Date;
@@ -43,6 +43,7 @@ export interface IEmployment extends BaseEntity {
 export interface IInsurance extends BaseEntity {
     insurance_id?: number;
     healthInsurance?: number
+    pastInsuranceRelation?: PastInsuranceRelation;
     type?: InsurantType;
     insurance_number?: string;
     start_date?: Date;
