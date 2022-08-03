@@ -38,8 +38,8 @@ export interface IEmployment extends BaseEntity {
 export interface IInsurance extends BaseEntity {
     insurance_id?: number;
     healthInsurance?: number;
-    pastInsuranceRelation?: PastInsuranceRelation;
     type?: InsurantType;
+    pastInsuranceRelation?: PastInsuranceRelation;
     insurance_number?: string;
     start_date?: Date;
     end_date?: Date;
