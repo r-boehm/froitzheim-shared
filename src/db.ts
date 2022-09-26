@@ -6,6 +6,14 @@ export interface BaseEntity {
     updated_at?: Date;
 }
 
+export interface IFile extends BaseEntity {
+    file_id_: number;
+    fileName: string;
+    originalFileName: string;
+    fileEnding: string;
+    person?: IPerson;
+}
+
 export interface IPerson extends BaseEntity {
     person_id?: number;
     name?: string;
