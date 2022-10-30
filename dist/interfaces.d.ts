@@ -1,3 +1,4 @@
+import { Permissions } from '.';
 export interface Page {
     title: string;
 }
@@ -12,5 +13,5 @@ export interface HealthInsurance {
 export interface Payload {
     username: string;
     userId: number;
-    permissions: number;
+    permissions: Permissions;
 }
