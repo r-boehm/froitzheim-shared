@@ -28,7 +28,6 @@ export interface IPerson extends BaseEntity {
     email?: string;
     iban?: string;
     bic?: string;
-    permissions: Permissions;
 }
 
 export interface ICustomer extends IPerson {
@@ -125,6 +124,7 @@ export interface IUser extends BaseEntity {
     bic?: string;
     employment_type?: EmploymentType;
     credentials?: ICredentials;
+    permissions: Permissions;
 }
 
 export interface ICredentials extends BaseEntity {
