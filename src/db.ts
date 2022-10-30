@@ -1,6 +1,6 @@
 import { ChangeReason, EmploymentType, InsurantType } from '.'
 import { Gender, PaymentState, PastInsuranceRelation, TermType } from './types'
-
+import { Permissions } from './permissions'
 export interface BaseEntity {
     created_at?: Date;
     updated_at?: Date;
@@ -28,6 +28,7 @@ export interface IPerson extends BaseEntity {
     email?: string;
     iban?: string;
     bic?: string;
+    permissions: Permissions;
 }
 
 export interface ICustomer extends IPerson {

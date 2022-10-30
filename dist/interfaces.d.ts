@@ -9,3 +9,8 @@ export interface HealthInsurance {
     id: number;
     name: string;
 }
+export interface Payload {
+    username: string;
+    userId: number;
+    permissions: number;
+}

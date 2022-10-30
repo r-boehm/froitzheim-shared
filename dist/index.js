@@ -13,3 +13,4 @@ Object.defineProperty(exports, "__esModule", { value: true });
 __exportStar(require("./interfaces"), exports);
 __exportStar(require("./db"), exports);
 __exportStar(require("./types"), exports);
+__exportStar(require("./permissions"), exports);
