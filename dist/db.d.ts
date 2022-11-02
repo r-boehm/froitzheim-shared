@@ -136,8 +136,8 @@ export interface ISetting {
 export interface PayoutData {
     [year: number]: number;
 }
-export declare enum SettingKey {
-    "Undefined" = 0,
-    "LastExport" = 1,
-    "Payout" = 2
+export declare const enum SettingKey {
+    Undefined = "Undefined",
+    LastExport = "LastExport",
+    Payout = "Payout"
 }
