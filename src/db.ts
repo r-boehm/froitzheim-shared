@@ -150,8 +150,8 @@ export interface PayoutData {
     [year: number]: number
 }
 
-export enum SettingKey {
-    "Undefined",
-    "LastExport",
-    "Payout",
+export const enum SettingKey {
+    Undefined = "Undefined",
+    LastExport = "LastExport",
+    Payout = "Payout",
 }
