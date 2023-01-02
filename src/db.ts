@@ -150,6 +150,14 @@ export interface PayoutData {
     [year: number]: number
 }
 
+export interface EMailSetting {
+    host: string;
+    port: number;
+    secure: boolean;
+    username: string;
+    password: string;
+}
+
 export enum SettingKey {
     Undefined = "Undefined",
     LastExport = "LastExport",
