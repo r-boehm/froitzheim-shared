@@ -139,5 +139,6 @@ export interface PayoutData {
 export declare enum SettingKey {
     Undefined = "Undefined",
     LastExport = "LastExport",
-    Payout = "Payout"
+    Payout = "Payout",
+    EMail = "EMail"
 }

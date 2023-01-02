@@ -6,4 +6,5 @@ var SettingKey;
     SettingKey["Undefined"] = "Undefined";
     SettingKey["LastExport"] = "LastExport";
     SettingKey["Payout"] = "Payout";
+    SettingKey["EMail"] = "EMail";
 })(SettingKey = exports.SettingKey || (exports.SettingKey = {}));
