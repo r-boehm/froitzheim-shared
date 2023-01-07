@@ -94,6 +94,7 @@ export interface IEmployer extends BaseEntity {
     phone?: string;
     email?: string;
     employments?: IEmployment[];
+    public: boolean;
 }
 
 export interface ITerm extends BaseEntity {
