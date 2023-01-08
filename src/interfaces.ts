@@ -18,3 +18,8 @@ export interface Payload {
     userId: number,
     permissions: Permissions
 };
+
+
+export type InsuranceData =
+    { familyInsuredName: string, familyInsuredNumber: string } |
+    { notInsuredSince: Date, notInsuredReason: string }

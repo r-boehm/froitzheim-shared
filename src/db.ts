@@ -1,4 +1,4 @@
-import { ChangeReason, EmploymentType, InsurantType } from '.'
+import { ChangeReason, EmploymentType, InsuranceData, InsurantType } from '.'
 import { Gender, PaymentState, PastInsuranceRelation, TermType } from './types'
 import { Permissions } from './permissions'
 export interface BaseEntity {
@@ -59,7 +59,7 @@ export interface IInsurance extends BaseEntity {
     person?: IPerson;
     application?: IApplication;
     applicationIsPrevious?: IApplication;
-    data?: any
+    data?: InsuranceData
 }
 
 export interface IReferer extends IPerson {
