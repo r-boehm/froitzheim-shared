@@ -15,10 +15,9 @@ export interface Payload {
     userId: number;
     permissions: Permissions;
 }
-export declare type InsuranceData = {
+export interface InsuranceData {
     familyInsuredName: string;
     familyInsuredNumber: string;
-} | {
     notInsuredSince: Date;
     notInsuredReason: string;
-};
+}

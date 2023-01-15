@@ -19,7 +19,9 @@ export interface Payload {
     permissions: Permissions
 };
 
-
-export type InsuranceData =
-    { familyInsuredName: string, familyInsuredNumber: string } |
-    { notInsuredSince: Date, notInsuredReason: string }
+export interface InsuranceData {
+    familyInsuredName: string;
+    familyInsuredNumber: string;
+    notInsuredSince: Date;
+    notInsuredReason: string;
+}
