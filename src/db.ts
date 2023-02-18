@@ -70,6 +70,7 @@ export interface IReferer extends IPerson {
     parent?: IReferer;
     children: IReferer[];
     allowedInsurances: number[];
+    provision: number;
 }
 
 export interface IApplication extends BaseEntity {
