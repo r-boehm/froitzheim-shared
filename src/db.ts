@@ -71,6 +71,15 @@ export interface IReferer extends IPerson {
     children: IReferer[];
     allowedInsurances: number[];
     provision: number;
+    /**
+     * Mitarbeiterkennung
+     */
+    referer_identifier: Record<string, string>
+    /**
+     * Vermittlerkennung
+     */
+    broker_identifier: Record<string, string>;
+
 }
 
 export interface IApplication extends BaseEntity {
