@@ -71,6 +71,7 @@ export interface IReferer extends IPerson {
     children: IReferer[];
     allowedInsurances: number[];
     provision: number;
+    _total_provision?: number;
     /**
      * Mitarbeiterkennung
      */
