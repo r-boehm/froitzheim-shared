@@ -1,5 +1,5 @@
 import { ChangeReason, EmploymentType, InsuranceData, InsurantType } from '.'
-import { Gender, PaymentState, PastInsuranceRelation, TermType } from './types'
+import { Gender, PaymentState, PastInsuranceRelation, TermType, Company } from './types'
 import { Permissions } from './permissions'
 export interface BaseEntity {
     created_at?: Date;
@@ -75,11 +75,11 @@ export interface IReferer extends IPerson {
     /**
      * Mitarbeiterkennung
      */
-    referer_identifier: Record<string, string>
+    referer_identifier: Record<Company, string>
     /**
      * Vermittlerkennung
      */
-    broker_identifier: Record<string, string>;
+    broker_identifier: Record<Company, string>;
 
 }
 
