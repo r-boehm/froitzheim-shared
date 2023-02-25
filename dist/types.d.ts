@@ -57,3 +57,7 @@ export declare enum TermType {
     Referer = 3
 }
 export declare type Email = string;
+export declare const CompanyEntries: readonly ["Novitas", "something"];
+declare type CompanyType = typeof CompanyEntries;
+export declare type Company = CompanyType[number];
+export {};

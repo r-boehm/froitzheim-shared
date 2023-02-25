@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.TermType = exports.PaymentState = exports.ChangeReason = exports.InsurantType = exports.PastInsuranceRelation = exports.EmploymentType = exports.Salary = exports.FamilyStatus = exports.Gender = void 0;
+exports.CompanyEntries = exports.TermType = exports.PaymentState = exports.ChangeReason = exports.InsurantType = exports.PastInsuranceRelation = exports.EmploymentType = exports.Salary = exports.FamilyStatus = exports.Gender = void 0;
 var Gender;
 (function (Gender) {
     Gender[Gender["Other"] = 0] = "Other";
@@ -68,3 +68,4 @@ var TermType;
     TermType[TermType["Customer"] = 2] = "Customer";
     TermType[TermType["Referer"] = 3] = "Referer";
 })(TermType = exports.TermType || (exports.TermType = {}));
+exports.CompanyEntries = ['Novitas', 'something'];
