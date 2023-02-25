@@ -62,6 +62,7 @@ export enum TermType {
     All = 0,
     User = 1,
     Customer = 2,
+    Referer = 3
 }
 
 export type Email = string;

@@ -66,4 +66,5 @@ var TermType;
     TermType[TermType["All"] = 0] = "All";
     TermType[TermType["User"] = 1] = "User";
     TermType[TermType["Customer"] = 2] = "Customer";
+    TermType[TermType["Referer"] = 3] = "Referer";
 })(TermType = exports.TermType || (exports.TermType = {}));

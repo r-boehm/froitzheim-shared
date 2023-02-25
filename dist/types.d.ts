@@ -53,6 +53,7 @@ export declare enum PaymentState {
 export declare enum TermType {
     All = 0,
     User = 1,
-    Customer = 2
+    Customer = 2,
+    Referer = 3
 }
 export declare type Email = string;
