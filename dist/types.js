@@ -68,4 +68,4 @@ var TermType;
     TermType[TermType["Customer"] = 2] = "Customer";
     TermType[TermType["Referer"] = 3] = "Referer";
 })(TermType = exports.TermType || (exports.TermType = {}));
-exports.CompanyEntries = ['Novitas', 'something'];
+exports.CompanyEntries = ['Novitas'];
