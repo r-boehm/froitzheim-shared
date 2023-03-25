@@ -1,5 +1,5 @@
 import { ChangeReason, EmploymentType, InsuranceData, InsurantType } from '.';
-import { Gender, PaymentState, PastInsuranceRelation, TermType, Company } from './types';
+import { Gender, PaymentState, PastInsuranceRelation, TermType } from './types';
 import { Permissions } from './permissions';
 export interface BaseEntity {
     created_at?: Date;
@@ -56,25 +56,6 @@ export interface IInsurance extends BaseEntity {
     applicationIsPrevious?: IApplication;
     data?: InsuranceData;
 }
-export interface IReferer extends IPerson {
-    vat?: string;
-    tax_number?: string;
-    applications?: IApplication[];
-    referal?: string;
-    parent?: IReferer;
-    children: IReferer[];
-    allowedInsurances: number[];
-    provision: number;
-    _total_provision?: number;
-    /**
-     * Mitarbeiterkennung
-     */
-    referer_identifier: Record<Company, string>;
-    /**
-     * Vermittlerkennung
-     */
-    broker_identifier: Record<Company, string>;
-}
 export interface IApplication extends BaseEntity {
     application_id?: number;
     person?: IPerson;
@@ -82,7 +63,7 @@ export interface IApplication extends BaseEntity {
     creation_date?: Date;
     reason?: ChangeReason;
     serialized?: string;
-    referer?: IReferer;
+    referer?: IUser;
     previousInsurance?: IInsurance;
     insurance?: IInsurance;
     payments?: IPayment[];
@@ -107,7 +88,7 @@ export interface ITerm extends BaseEntity {
     data?: string;
     users?: IUser[];
     persons?: IPerson[];
-    referers?: IReferer[];
+    referers?: IUser[];
     type?: TermType;
     optional?: boolean;
     active?: boolean;
