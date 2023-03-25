@@ -7,4 +7,5 @@ var SettingKey;
     SettingKey["LastExport"] = "LastExport";
     SettingKey["Payout"] = "Payout";
     SettingKey["EMail"] = "EMail";
+    SettingKey["Broker"] = "Broker";
 })(SettingKey = exports.SettingKey || (exports.SettingKey = {}));

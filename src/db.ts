@@ -167,4 +167,5 @@ export enum SettingKey {
     LastExport = "LastExport",
     Payout = "Payout",
     EMail = "EMail",
+    Broker = "Broker"
 }

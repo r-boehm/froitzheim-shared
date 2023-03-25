@@ -152,5 +152,6 @@ export declare enum SettingKey {
     Undefined = "Undefined",
     LastExport = "LastExport",
     Payout = "Payout",
-    EMail = "EMail"
+    EMail = "EMail",
+    Broker = "Broker"
 }
