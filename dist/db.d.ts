@@ -1,5 +1,5 @@
 import { ChangeReason, EmploymentType, InsuranceData, InsurantType } from '.';
-import { Gender, PaymentState, PastInsuranceRelation, TermType } from './types';
+import { Gender, PaymentState, PastInsuranceRelation, TermType, Company } from './types';
 import { Permissions } from './permissions';
 export interface BaseEntity {
     created_at?: Date;
@@ -107,6 +107,19 @@ export interface IUser extends BaseEntity {
     employment_type?: EmploymentType;
     credentials?: ICredentials;
     permissions: Permissions;
+    vat?: string;
+    tax_number?: string;
+    applications?: IApplication[];
+    referal?: string;
+    parent?: IUser;
+    children: IUser[];
+    allowedInsurances: number[];
+    provision: number;
+    _total_provision?: number;
+    /**
+     * Vermittlerkennung
+     */
+    broker_identifier: Record<Company, string>;
 }
 export interface ICredentials extends BaseEntity {
     user?: IUser;

@@ -116,6 +116,19 @@ export interface IUser extends BaseEntity {
     employment_type?: EmploymentType;
     credentials?: ICredentials;
     permissions: Permissions;
+    vat?: string;
+    tax_number?: string;
+    applications?: IApplication[];
+    referal?: string;
+    parent?: IUser;
+    children: IUser[];
+    allowedInsurances: number[];
+    provision: number;
+    _total_provision?: number;
+    /**
+     * Vermittlerkennung
+     */
+    broker_identifier: Record<Company, string>;
 }
 
 export interface ICredentials extends BaseEntity {
