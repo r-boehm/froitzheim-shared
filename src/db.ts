@@ -1,5 +1,5 @@
 import { ChangeReason, EmploymentType, InsuranceData, InsurantType } from '.'
-import { Gender, PaymentState, PastInsuranceRelation, TermType, Company } from './types'
+import { Gender, PaymentState, PastInsuranceRelation, TermType, Company, FamilyStatus } from './types'
 import { Permissions } from './permissions'
 export interface BaseEntity {
     created_at?: Date;
@@ -21,6 +21,7 @@ export interface IPerson extends BaseEntity {
     birthday?: Date;
     birthdayLongDate?: string;
     gender?: Gender;
+    familyStatus?: FamilyStatus;
     postcode?: string;
     city?: string;
     street?: string;
