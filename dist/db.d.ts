@@ -33,6 +33,7 @@ export interface IForm extends BaseEntity {
         type: FormType;
         property: string;
     }[];
+    bindings: Record<string, string>;
 }
 export interface IFile extends BaseEntity {
     file_id_: number;
