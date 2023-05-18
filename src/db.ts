@@ -7,11 +7,11 @@ export interface BaseEntity {
 }
 export type FormType = "Textbox" | "CheckBox"
 export interface IForm extends BaseEntity {
-    form_id: number
+    form_id?: number;
     formName: string;
     filePath: string;
-    fields: {
-        formField: [{
+    fields: [
+        {
             bounds: {
                 x?: number;
                 y?: number;
@@ -21,14 +21,20 @@ export interface IForm extends BaseEntity {
                 top?: number;
                 right?: number;
                 bottom?: number;
-                location?: {x?: number; y?: number;};
-                size?: {width: number; height: number;};
-            },
-            name: string,
-            type: FormType,
+                location?: {
+                    x?: number;
+                    y?: number;
+                };
+                size?: {
+                    width: number;
+                    height: number;
+                };
+            };
+            name: string;
+            type: FormType;
             property: string;
-        }]
-    }
+        }
+    ];
 }
 
 export interface IFile extends BaseEntity {

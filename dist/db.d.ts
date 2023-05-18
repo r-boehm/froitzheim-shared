@@ -7,36 +7,34 @@ export interface BaseEntity {
 }
 export declare type FormType = "Textbox" | "CheckBox";
 export interface IForm extends BaseEntity {
-    form_id: number;
+    form_id?: number;
     formName: string;
     filePath: string;
-    fields: {
-        formField: [
-            {
-                bounds: {
+    fields: [
+        {
+            bounds: {
+                x?: number;
+                y?: number;
+                width?: number;
+                height?: number;
+                left?: number;
+                top?: number;
+                right?: number;
+                bottom?: number;
+                location?: {
                     x?: number;
                     y?: number;
-                    width?: number;
-                    height?: number;
-                    left?: number;
-                    top?: number;
-                    right?: number;
-                    bottom?: number;
-                    location?: {
-                        x?: number;
-                        y?: number;
-                    };
-                    size?: {
-                        width: number;
-                        height: number;
-                    };
                 };
-                name: string;
-                type: FormType;
-                property: string;
-            }
-        ];
-    };
+                size?: {
+                    width: number;
+                    height: number;
+                };
+            };
+            name: string;
+            type: FormType;
+            property: string;
+        }
+    ];
 }
 export interface IFile extends BaseEntity {
     file_id_: number;
