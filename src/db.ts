@@ -30,6 +30,7 @@ export interface IForm extends BaseEntity {
             };
         };
         name: string;
+        id: string;
         type: FormType;
         property: string;
     }[];
