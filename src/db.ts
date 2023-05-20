@@ -75,6 +75,7 @@ export interface ICustomer extends IPerson {
 export interface IEmployment extends BaseEntity {
     person?: IPerson;
     employer?: IEmployer;
+    application?: IApplication;
     start_date?: Date;
     end_date?: Date;
     salary?: number;
@@ -104,6 +105,7 @@ export interface IApplication extends BaseEntity {
     referer?: IUser;
     previousInsurance?: IInsurance;
     insurance?: IInsurance;
+    employment?: IEmployment;
     payments?: IPayment[];
 }
 
