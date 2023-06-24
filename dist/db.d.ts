@@ -156,6 +156,7 @@ export interface IUser extends BaseEntity {
     broker_identifier: Record<Company, string>;
 }
 export interface IRole extends BaseEntity {
+    title: string;
     permissions: Permissions;
 }
 export interface ICredentials extends BaseEntity {
