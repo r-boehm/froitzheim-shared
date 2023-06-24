@@ -166,6 +166,7 @@ export interface IUser extends BaseEntity {
 }
 
 export interface IRole extends BaseEntity {
+    role_id: string;
     title: string;
     default?: boolean;
     inherit?: boolean;
