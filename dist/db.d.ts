@@ -140,7 +140,7 @@ export interface IUser extends BaseEntity {
     bic?: string;
     employment_type?: EmploymentType;
     credentials?: ICredentials;
-    permissions: Permissions;
+    roles: IRole[];
     vat?: string;
     tax_number?: string;
     applications?: IApplication[];
@@ -154,6 +154,9 @@ export interface IUser extends BaseEntity {
      * Vermittlerkennung
      */
     broker_identifier: Record<Company, string>;
+}
+export interface IRole extends BaseEntity {
+    permissions: Permissions;
 }
 export interface ICredentials extends BaseEntity {
     user?: IUser;
