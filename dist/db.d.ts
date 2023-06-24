@@ -157,6 +157,8 @@ export interface IUser extends BaseEntity {
 }
 export interface IRole extends BaseEntity {
     title: string;
+    default?: boolean;
+    inherit?: boolean;
     permissions: Permissions;
 }
 export interface ICredentials extends BaseEntity {
