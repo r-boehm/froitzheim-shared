@@ -156,7 +156,7 @@ export interface IUser extends BaseEntity {
     broker_identifier: Record<Company, string>;
 }
 export interface IRole extends BaseEntity {
-    role_id: string;
+    role_id: number;
     title: string;
     default?: boolean;
     inherit?: boolean;
