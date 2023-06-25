@@ -5,7 +5,7 @@ export interface BaseEntity {
     created_at?: Date;
     updated_at?: Date;
 }
-export declare type FormType = "Textbox" | "CheckBox";
+export type FormType = "Textbox" | "CheckBox";
 export interface IForm extends BaseEntity {
     form_id?: number;
     formName: string;
