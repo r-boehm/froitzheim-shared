@@ -8,4 +8,5 @@ var SettingKey;
     SettingKey["Payout"] = "Payout";
     SettingKey["EMail"] = "EMail";
     SettingKey["Broker"] = "Broker";
+    SettingKey["Insurances"] = "Insurances";
 })(SettingKey || (exports.SettingKey = SettingKey = {}));
