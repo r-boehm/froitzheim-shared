@@ -54,6 +54,7 @@ export interface IPerson extends BaseEntity {
     postcode?: string;
     city?: string;
     street?: string;
+    streetNumber?: string;
     phone?: string;
     email?: string;
     iban?: string;
@@ -108,6 +109,7 @@ export interface IEmployer extends BaseEntity {
     city?: string;
     postcode?: string;
     street?: string;
+    streetNumber?: string;
     phone?: string;
     email?: string;
     employments?: IEmployment[];
@@ -134,6 +136,7 @@ export interface IUser extends BaseEntity {
     postcode?: string;
     city?: string;
     street?: string;
+    streetNumber?: string;
     phone?: string;
     email?: string;
     iban?: string;
