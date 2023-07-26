@@ -9,4 +9,4 @@ var SettingKey;
     SettingKey["EMail"] = "EMail";
     SettingKey["Broker"] = "Broker";
     SettingKey["Insurances"] = "Insurances";
-})(SettingKey || (exports.SettingKey = SettingKey = {}));
+})(SettingKey = exports.SettingKey || (exports.SettingKey = {}));
