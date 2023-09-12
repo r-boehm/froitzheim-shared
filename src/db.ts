@@ -207,6 +207,13 @@ export interface EMailSetting {
     password: string;
 }
 
+export interface WebDAVSetting {
+    url: string;
+    port: number;
+    username: string;
+    password: string;
+}
+
 export enum SettingKey {
     Undefined = "Undefined",
     LastExport = "LastExport",
@@ -214,4 +221,5 @@ export enum SettingKey {
     EMail = "EMail",
     Broker = "Broker",
     Insurances = "Insurances",
+    WebDAV = "WebDAV",
 }

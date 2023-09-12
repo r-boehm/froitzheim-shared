@@ -5,7 +5,7 @@ export interface BaseEntity {
     created_at?: Date;
     updated_at?: Date;
 }
-export declare type FormType = "Textbox" | "CheckBox";
+export type FormType = "Textbox" | "CheckBox";
 export interface IForm extends BaseEntity {
     form_id?: number;
     formName: string;
@@ -192,11 +192,18 @@ export interface EMailSetting {
     username: string;
     password: string;
 }
+export interface WebDAVSetting {
+    url: string;
+    port: number;
+    username: string;
+    password: string;
+}
 export declare enum SettingKey {
     Undefined = "Undefined",
     LastExport = "LastExport",
     Payout = "Payout",
     EMail = "EMail",
     Broker = "Broker",
-    Insurances = "Insurances"
+    Insurances = "Insurances",
+    WebDAV = "WebDAV"
 }
