@@ -188,6 +188,13 @@ export interface IPayment {
     date: Date;
     amount: number;
 }
+export interface ITransaction {
+    id: number;
+    date: Date;
+    amount: number;
+    user: IPerson;
+    payment: IPayment;
+}
 export interface ISetting {
     id?: number;
     key: SettingKey;
