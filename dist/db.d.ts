@@ -1,5 +1,5 @@
 import { ChangeReason, EmploymentType, InsuranceData, InsurantType } from '.';
-import { Gender, PaymentState, PastInsuranceRelation, TermType, Company, FamilyStatus } from './types';
+import { Gender, PastInsuranceRelation, TermType, Company, FamilyStatus } from './types';
 import { Permissions } from './permissions';
 export interface BaseEntity {
     created_at?: Date;
@@ -172,9 +172,9 @@ export interface ICredentials extends BaseEntity {
 }
 export interface IPayment {
     payment_id?: number;
-    state: PaymentState;
     date: Date;
     amount: number;
+    storno?: IPayment;
 }
 export interface ITransaction {
     id: number;
