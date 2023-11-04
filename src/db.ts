@@ -194,6 +194,7 @@ export interface ITransaction {
     amount: number;
     user: IPerson;
     payment: IPayment;
+    isPayout: boolean;
 }
 export interface ISetting {
     id?: number;
