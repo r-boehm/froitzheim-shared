@@ -192,7 +192,7 @@ export interface ITransaction {
     id: number;
     date: Date;
     amount: number;
-    user: IPerson;
+    user: IUser;
     payment: IPayment;
     isPayout: boolean;
 }
