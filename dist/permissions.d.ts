@@ -15,6 +15,7 @@ export interface Customers extends CRUD {
 }
 export interface Applications extends Entry {
     all: boolean;
+    delete: boolean;
     update: boolean;
     payment: boolean;
 }
