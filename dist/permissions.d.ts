@@ -4,10 +4,9 @@ export interface Permissions {
 export interface Administration extends Entry {
     settings: boolean;
     terms: boolean;
-    employers: boolean;
+    employers: Employers;
     Customers: Customers;
     Applications: Applications;
-    Referer: Referers;
     Employees: Employees;
     Export: Export;
 }
@@ -19,10 +18,12 @@ export interface Applications extends Entry {
     update: boolean;
     payment: boolean;
 }
-export interface Referers extends CRUD {
-    all: boolean;
-}
 export interface Employees extends CRUD {
+    manage: boolean;
+}
+export interface Employers {
+    create: boolean;
+    manage: boolean;
 }
 export interface Export extends Entry {
     all: boolean;
