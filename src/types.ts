@@ -12,7 +12,6 @@ export enum FamilyStatus {
 }
 
 export enum Salary {
-    Undefined = 0,
     Minijob = 1,
     Default = 2,
     OverThreshold = 3

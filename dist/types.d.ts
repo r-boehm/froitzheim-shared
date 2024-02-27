@@ -10,7 +10,6 @@ export declare enum FamilyStatus {
     Widowed = 3
 }
 export declare enum Salary {
-    Undefined = 0,
     Minijob = 1,
     Default = 2,
     OverThreshold = 3
