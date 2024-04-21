@@ -16,6 +16,7 @@ var FamilyStatus;
 })(FamilyStatus = exports.FamilyStatus || (exports.FamilyStatus = {}));
 var Salary;
 (function (Salary) {
+    Salary[Salary["Undefined"] = 0] = "Undefined";
     Salary[Salary["Minijob"] = 1] = "Minijob";
     Salary[Salary["Default"] = 2] = "Default";
     Salary[Salary["OverThreshold"] = 3] = "OverThreshold";

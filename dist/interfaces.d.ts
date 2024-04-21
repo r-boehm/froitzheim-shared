@@ -12,6 +12,8 @@ export interface HealthInsurance {
 }
 export interface Payload {
     username: string;
+    firstname: string;
+    name: string;
     userId: number;
     permissions: Permissions;
 }
