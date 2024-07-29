@@ -45,6 +45,12 @@ export enum InsurantType {
     Unemployed = 11
 }
 
+export enum FileType {
+    Undefined = 0,
+    Personal_ID = 1,
+    HealthInsurance = 2,
+}
+
 export enum ChangeReason {
     Undefined = 0,
     ChangeInsuranceRelationship = 1,

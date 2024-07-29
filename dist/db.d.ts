@@ -1,11 +1,11 @@
 import { ChangeReason, EmploymentType, InsuranceData, InsurantType } from '.';
-import { Gender, PastInsuranceRelation, TermType, Company, FamilyStatus } from './types';
+import { Gender, PastInsuranceRelation, TermType, Company, FamilyStatus, FileType } from './types';
 import { Permissions } from './permissions';
 export interface BaseEntity {
     created_at?: Date;
     updated_at?: Date;
 }
-export declare type FormType = "Textbox" | "CheckBox";
+export type FormType = "Textbox" | "CheckBox";
 export interface IForm extends BaseEntity {
     form_id?: number;
     formName: string;
@@ -42,6 +42,7 @@ export interface IFile extends BaseEntity {
     originalFileName: string;
     fileEnding: string;
     person?: IPerson;
+    fileType?: FileType;
 }
 export interface IPerson extends BaseEntity {
     person_id?: number;

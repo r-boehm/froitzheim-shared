@@ -1,5 +1,5 @@
 import { ChangeReason, EmploymentType, InsuranceData, InsurantType } from '.'
-import { Gender, PaymentState, PastInsuranceRelation, TermType, Company, FamilyStatus } from './types'
+import { Gender, PaymentState, PastInsuranceRelation, TermType, Company, FamilyStatus, FileType } from './types'
 import { Permissions } from './permissions'
 export interface BaseEntity {
     created_at?: Date;
@@ -43,6 +43,7 @@ export interface IFile extends BaseEntity {
     originalFileName: string;
     fileEnding: string;
     person?: IPerson;
+    fileType?: FileType;
 }
 
 export interface IPerson extends BaseEntity {

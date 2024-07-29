@@ -39,6 +39,11 @@ export declare enum InsurantType {
     UnemployedJobCenter = 10,
     Unemployed = 11
 }
+export declare enum FileType {
+    Undefined = 0,
+    Personal_ID = 1,
+    HealthInsurance = 2
+}
 export declare enum ChangeReason {
     Undefined = 0,
     ChangeInsuranceRelationship = 1,
@@ -56,8 +61,8 @@ export declare enum TermType {
     Customer = 2,
     Referer = 3
 }
-export declare type Email = string;
+export type Email = string;
 export declare const CompanyEntries: readonly ["Novitas"];
-declare type CompanyType = typeof CompanyEntries;
-export declare type Company = CompanyType[number];
+type CompanyType = typeof CompanyEntries;
+export type Company = CompanyType[number];
 export {};
