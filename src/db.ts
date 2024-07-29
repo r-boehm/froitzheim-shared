@@ -62,6 +62,13 @@ export interface IPerson extends BaseEntity {
     email?: string;
     iban?: string;
     bic?: string;
+    family?: IFamily
+}
+
+export interface IFamily {
+    id: number;
+    members: IPerson[];
+    owner: IPerson;
 }
 
 export interface ICustomer extends IPerson {
