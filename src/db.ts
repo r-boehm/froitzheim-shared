@@ -168,6 +168,7 @@ export interface IUser extends BaseEntity {
     parent?: IUser;
     children: IUser[];
     allowedInsurances?: number[];
+    hasProvision: boolean;
     provision: number;
     _total_provision?: number;
     /**
