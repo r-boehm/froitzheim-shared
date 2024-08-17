@@ -21,6 +21,7 @@ export interface Applications extends Entry {
     delete: boolean;
     update: boolean;
     payment: boolean;
+    requireIBAN: boolean;
 }
 
 export interface Employees extends CRUD {
