@@ -1,3 +1,15 @@
+import { Permissions } from "./permissions";
+
+export type JWT_Payload = {
+    user: {
+        ID: number,
+        firstname: string,
+        name: string,
+        email: string,
+    },
+    permissions: Permissions
+}
+
 export enum Gender {
     Other = 0,
     Male = 1,
