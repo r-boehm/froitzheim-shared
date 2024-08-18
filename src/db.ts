@@ -79,6 +79,10 @@ export interface ICustomer extends IPerson {
     child_entries?: IPerson[];
     terms?: ITerm[];
     applications?: IApplication[];
+    birthCountry?: string;
+    birthCity?: string;
+    birthName?: string;
+    nationality?: string;
 }
 
 export interface IEmployment extends BaseEntity {
