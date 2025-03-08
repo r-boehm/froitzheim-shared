@@ -1,5 +1,5 @@
 import { Permissions } from "./permissions";
-export type JWT_Payload = {
+export declare type JWT_Payload = {
     user: {
         ID: number;
         firstname: string;
@@ -71,8 +71,8 @@ export declare enum TermType {
     Customer = 2,
     Referer = 3
 }
-export type Email = string;
+export declare type Email = string;
 export declare const CompanyEntries: readonly ["Novitas"];
-type CompanyType = typeof CompanyEntries;
-export type Company = CompanyType[number];
+declare type CompanyType = typeof CompanyEntries;
+export declare type Company = CompanyType[number];
 export {};
