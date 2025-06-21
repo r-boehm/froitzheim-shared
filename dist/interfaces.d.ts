@@ -7,7 +7,8 @@ export interface IAuthResult {
     expiration: number;
 }
 export interface HealthInsurance {
-    id: number;
+    id: string;
+    value: number;
     name: string;
 }
 export interface Payload {
