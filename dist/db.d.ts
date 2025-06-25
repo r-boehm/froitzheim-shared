@@ -114,6 +114,7 @@ export interface IApplication extends BaseEntity {
     insurance?: IInsurance;
     employment?: IEmployment;
     payments?: IPayment[];
+    remark?: string;
 }
 export interface IEmployer extends BaseEntity {
     employer_id?: number;
