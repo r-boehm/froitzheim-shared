@@ -60,6 +60,7 @@ export interface IPerson extends BaseEntity {
     email?: string;
     iban?: string;
     bic?: string;
+    bankAccountHolder?: string;
     family?: IFamily;
 }
 export interface IFamily {
