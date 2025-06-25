@@ -162,6 +162,7 @@ export interface IUser extends BaseEntity {
     email?: string;
     iban?: string;
     bic?: string;
+    bankAccountHolder?: string;
     employment_type?: EmploymentType;
     credentials?: ICredentials;
     roles: IRole[];
