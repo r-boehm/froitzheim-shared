@@ -28,3 +28,8 @@ export interface InsuranceData {
     notInsuredSince: Date;
     notInsuredReason: string;
 }
+
+export interface TextTemplate {
+    title: string;
+    content: string;
+}
