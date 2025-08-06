@@ -93,6 +93,7 @@ export interface IEmployment extends BaseEntity {
     start_date?: Date;
     end_date?: Date;
     salary?: number;
+    comment?: string;
 }
 
 export interface IInsurance extends BaseEntity {
