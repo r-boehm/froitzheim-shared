@@ -10,4 +10,5 @@ var SettingKey;
     SettingKey["Broker"] = "Broker";
     SettingKey["Insurances"] = "Insurances";
     SettingKey["WebDAV"] = "WebDAV";
+    SettingKey["TextTemplate"] = "TextTemplate";
 })(SettingKey || (exports.SettingKey = SettingKey = {}));

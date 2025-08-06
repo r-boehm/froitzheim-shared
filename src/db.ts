@@ -246,4 +246,5 @@ export enum SettingKey {
     Broker = "Broker",
     Insurances = "Insurances",
     WebDAV = "WebDAV",
+    TextTemplate = "TextTemplate",
 }
