@@ -12,4 +12,5 @@ var SettingKey;
     SettingKey["WebDAV"] = "WebDAV";
     SettingKey["TextTemplate"] = "TextTemplate";
     SettingKey["BigEmail"] = "BigEmail";
+    SettingKey["BergischeEmail"] = "BergischeEmail";
 })(SettingKey || (exports.SettingKey = SettingKey = {}));
