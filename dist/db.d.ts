@@ -128,6 +128,7 @@ export interface IEmployer extends BaseEntity {
     email?: string;
     employments?: IEmployment[];
     public: boolean;
+    remark?: string;
 }
 export interface ITerm extends BaseEntity {
     term_id?: number;
