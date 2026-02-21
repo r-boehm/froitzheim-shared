@@ -252,4 +252,6 @@ export enum SettingKey {
     TextTemplate = "TextTemplate",
     BigEmail = "BigEmail",
     BergischeEmail = "BergischeEmail",
+    DAKEmail = "DAKEmail",
+    ViactivEmail = "ViactivEmail",
 }

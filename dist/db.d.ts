@@ -234,5 +234,7 @@ export declare enum SettingKey {
     WebDAV = "WebDAV",
     TextTemplate = "TextTemplate",
     BigEmail = "BigEmail",
-    BergischeEmail = "BergischeEmail"
+    BergischeEmail = "BergischeEmail",
+    DAKEmail = "DAKEmail",
+    ViactivEmail = "ViactivEmail"
 }

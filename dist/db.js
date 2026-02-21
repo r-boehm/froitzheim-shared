@@ -13,4 +13,6 @@ var SettingKey;
     SettingKey["TextTemplate"] = "TextTemplate";
     SettingKey["BigEmail"] = "BigEmail";
     SettingKey["BergischeEmail"] = "BergischeEmail";
+    SettingKey["DAKEmail"] = "DAKEmail";
+    SettingKey["ViactivEmail"] = "ViactivEmail";
 })(SettingKey || (exports.SettingKey = SettingKey = {}));
