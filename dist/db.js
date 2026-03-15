@@ -15,4 +15,5 @@ var SettingKey;
     SettingKey["BergischeEmail"] = "BergischeEmail";
     SettingKey["DAKEmail"] = "DAKEmail";
     SettingKey["ViactivEmail"] = "ViactivEmail";
+    SettingKey["KKHEmail"] = "KKHEmail";
 })(SettingKey || (exports.SettingKey = SettingKey = {}));
