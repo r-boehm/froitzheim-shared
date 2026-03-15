@@ -85,6 +85,6 @@ export enum TermType {
 
 export type Email = string;
 
-export const CompanyEntries = ['Novitas', 'DAK', 'Viactiv'] as const;
+export const CompanyEntries = ['Novitas', 'DAK', 'Viactiv', 'KKH'] as const;
 type CompanyType = typeof CompanyEntries;
 export type Company = CompanyType[number]
