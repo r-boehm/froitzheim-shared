@@ -237,5 +237,6 @@ export declare enum SettingKey {
     BergischeEmail = "BergischeEmail",
     DAKEmail = "DAKEmail",
     ViactivEmail = "ViactivEmail",
-    KKHEmail = "KKHEmail"
+    KKHEmail = "KKHEmail",
+    PDFPassword = "PDFPassword"
 }

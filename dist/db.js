@@ -16,4 +16,5 @@ var SettingKey;
     SettingKey["DAKEmail"] = "DAKEmail";
     SettingKey["ViactivEmail"] = "ViactivEmail";
     SettingKey["KKHEmail"] = "KKHEmail";
+    SettingKey["PDFPassword"] = "PDFPassword";
 })(SettingKey || (exports.SettingKey = SettingKey = {}));
