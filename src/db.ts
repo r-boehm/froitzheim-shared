@@ -255,5 +255,6 @@ export enum SettingKey {
     DAKEmail = "DAKEmail",
     ViactivEmail = "ViactivEmail",
     KKHEmail = "KKHEmail",
+    NovitasEmail = "NovitasEmail",
     PDFPassword = "PDFPassword",
 }
