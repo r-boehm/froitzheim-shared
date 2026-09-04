@@ -1,0 +1,21 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.SettingKey = void 0;
+var SettingKey;
+(function (SettingKey) {
+    SettingKey["Undefined"] = "Undefined";
+    SettingKey["LastExport"] = "LastExport";
+    SettingKey["Payout"] = "Payout";
+    SettingKey["EMail"] = "EMail";
+    SettingKey["Broker"] = "Broker";
+    SettingKey["Insurances"] = "Insurances";
+    SettingKey["WebDAV"] = "WebDAV";
+    SettingKey["TextTemplate"] = "TextTemplate";
+    SettingKey["BigEmail"] = "BigEmail";
+    SettingKey["BergischeEmail"] = "BergischeEmail";
+    SettingKey["DAKEmail"] = "DAKEmail";
+    SettingKey["ViactivEmail"] = "ViactivEmail";
+    SettingKey["KKHEmail"] = "KKHEmail";
+    SettingKey["NovitasEmail"] = "NovitasEmail";
+    SettingKey["PDFPassword"] = "PDFPassword";
+})(SettingKey || (exports.SettingKey = SettingKey = {}));

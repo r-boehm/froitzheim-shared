@@ -1,5 +1,5 @@
 import { ChangeReason, EmploymentType, InsuranceData, InsurantType } from '.'
-import { Gender, PaymentState, PastInsuranceRelation, TermType, Company, FamilyStatus, FileType } from './types'
+import { Gender, PaymentState, PastInsuranceRelation, TermType, Company, FamilyStatus, FileType, FamilyMemberRelation } from './types'
 import { Permissions } from './permissions'
 export interface BaseEntity {
     created_at?: Date;
@@ -110,6 +110,15 @@ export interface IInsurance extends BaseEntity {
     data?: InsuranceData
 }
 
+export interface IApplicationDependent extends BaseEntity {
+    dependant_id?: number;
+    application?: IApplication;
+    person?: IPerson;
+    relation?: FamilyMemberRelation;
+    insured?: boolean;
+    notes?: string;
+}
+
 export interface IApplication extends BaseEntity {
     application_id?: number;
     person?: IPerson;
@@ -124,6 +133,7 @@ export interface IApplication extends BaseEntity {
     payments?: IPayment[];
     remark?: string;
     job_center_id?: string;
+    dependants?: IApplicationDependent[];
 }
 
 export interface IEmployer extends BaseEntity {

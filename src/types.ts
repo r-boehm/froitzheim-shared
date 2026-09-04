@@ -23,6 +23,12 @@ export enum FamilyStatus {
     Widowed = 3
 }
 
+export enum FamilyMemberRelation {
+    Partner = 'partner',
+    Child = 'child',
+    Other = 'other'
+}
+
 export enum Salary {
     Undefined = 0,
     Minijob = 1,
