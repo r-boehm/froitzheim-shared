@@ -1,5 +1,5 @@
-import { ChangeReason, EmploymentType, InsuranceData, InsurantType } from '.';
-import { Gender, PastInsuranceRelation, TermType, Company, FamilyStatus, FileType, FamilyMemberRelation } from './types';
+import { ChangeReason, DependantDetails, EmploymentType, InsuranceData, InsurantType } from '.';
+import { Gender, PastInsuranceRelation, TermType, Company, FamilyStatus, FileType, FamilyMemberRelation, FamilyInsuranceReason } from './types';
 import { Permissions } from './permissions';
 export interface BaseEntity {
     created_at?: Date;
@@ -43,6 +43,7 @@ export interface IFile extends BaseEntity {
     fileEnding: string;
     person?: IPerson;
     fileType?: FileType;
+    dependant?: IApplicationDependent;
 }
 export interface IPerson extends BaseEntity {
     person_id?: number;
@@ -106,10 +107,13 @@ export interface IInsurance extends BaseEntity {
 export interface IApplicationDependent extends BaseEntity {
     dependant_id?: number;
     application?: IApplication;
-    person?: IPerson;
+    person?: ICustomer;
     relation?: FamilyMemberRelation;
     insured?: boolean;
     notes?: string;
+    otherParentName?: string;
+    files?: IFile[];
+    details?: DependantDetails;
 }
 export interface IApplication extends BaseEntity {
     application_id?: number;
@@ -126,6 +130,9 @@ export interface IApplication extends BaseEntity {
     remark?: string;
     job_center_id?: string;
     dependants?: IApplicationDependent[];
+    familyInsurance?: boolean;
+    familyInsuranceReason?: FamilyInsuranceReason;
+    familyInsuranceReasonOther?: string;
 }
 export interface IEmployer extends BaseEntity {
     employer_id?: number;
@@ -248,5 +255,6 @@ export declare enum SettingKey {
     ViactivEmail = "ViactivEmail",
     KKHEmail = "KKHEmail",
     NovitasEmail = "NovitasEmail",
-    PDFPassword = "PDFPassword"
+    PDFPassword = "PDFPassword",
+    FamilyInsuranceForm = "FamilyInsuranceForm"
 }

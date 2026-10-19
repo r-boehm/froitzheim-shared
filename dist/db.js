@@ -18,4 +18,5 @@ var SettingKey;
     SettingKey["KKHEmail"] = "KKHEmail";
     SettingKey["NovitasEmail"] = "NovitasEmail";
     SettingKey["PDFPassword"] = "PDFPassword";
+    SettingKey["FamilyInsuranceForm"] = "FamilyInsuranceForm";
 })(SettingKey || (exports.SettingKey = SettingKey = {}));

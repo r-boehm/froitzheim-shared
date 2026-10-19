@@ -24,6 +24,32 @@ export declare enum FamilyMemberRelation {
     Child = "child",
     Other = "other"
 }
+/** Anlass für die Aufnahme in die Familienversicherung */
+export declare enum FamilyInsuranceReason {
+    MembershipStart = "membershipStart",
+    ChildBirth = "childBirth",
+    Marriage = "marriage",
+    EndOfOwnMembership = "endOfOwnMembership",
+    Other = "other"
+}
+/** Verwandtschaftsverhältnis des Kindes zum Mitglied ("leibliches Kind" auch bei Adoption) */
+export declare enum ChildRelation {
+    Biological = "biological",
+    Step = "step",
+    Foster = "foster",
+    Grandchild = "grandchild"
+}
+/** Bisherige (bzw. beim nicht mitversicherten Partner aktuelle) Versicherung eines Angehörigen */
+export declare enum DependantInsuranceType {
+    Own = "own",
+    Family = "family",
+    NotStatutory = "notStatutory",
+    None = "none"
+}
+export declare enum EducationType {
+    School = "school",
+    Study = "study"
+}
 export declare enum Salary {
     Undefined = 0,
     Minijob = 1,
@@ -57,7 +83,8 @@ export declare enum InsurantType {
 export declare enum FileType {
     Undefined = 0,
     Personal_ID = 1,
-    HealthInsurance = 2
+    HealthInsurance = 2,
+    Certificate = 3
 }
 export declare enum ChangeReason {
     Undefined = 0,

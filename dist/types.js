@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.CompanyEntries = exports.TermType = exports.PaymentState = exports.ChangeReason = exports.FileType = exports.InsurantType = exports.PastInsuranceRelation = exports.EmploymentType = exports.Salary = exports.FamilyMemberRelation = exports.FamilyStatus = exports.Gender = void 0;
+exports.CompanyEntries = exports.TermType = exports.PaymentState = exports.ChangeReason = exports.FileType = exports.InsurantType = exports.PastInsuranceRelation = exports.EmploymentType = exports.Salary = exports.EducationType = exports.DependantInsuranceType = exports.ChildRelation = exports.FamilyInsuranceReason = exports.FamilyMemberRelation = exports.FamilyStatus = exports.Gender = void 0;
 var Gender;
 (function (Gender) {
     Gender[Gender["Other"] = 0] = "Other";
@@ -20,6 +20,36 @@ var FamilyMemberRelation;
     FamilyMemberRelation["Child"] = "child";
     FamilyMemberRelation["Other"] = "other";
 })(FamilyMemberRelation || (exports.FamilyMemberRelation = FamilyMemberRelation = {}));
+/** Anlass für die Aufnahme in die Familienversicherung */
+var FamilyInsuranceReason;
+(function (FamilyInsuranceReason) {
+    FamilyInsuranceReason["MembershipStart"] = "membershipStart";
+    FamilyInsuranceReason["ChildBirth"] = "childBirth";
+    FamilyInsuranceReason["Marriage"] = "marriage";
+    FamilyInsuranceReason["EndOfOwnMembership"] = "endOfOwnMembership";
+    FamilyInsuranceReason["Other"] = "other";
+})(FamilyInsuranceReason || (exports.FamilyInsuranceReason = FamilyInsuranceReason = {}));
+/** Verwandtschaftsverhältnis des Kindes zum Mitglied ("leibliches Kind" auch bei Adoption) */
+var ChildRelation;
+(function (ChildRelation) {
+    ChildRelation["Biological"] = "biological";
+    ChildRelation["Step"] = "step";
+    ChildRelation["Foster"] = "foster";
+    ChildRelation["Grandchild"] = "grandchild";
+})(ChildRelation || (exports.ChildRelation = ChildRelation = {}));
+/** Bisherige (bzw. beim nicht mitversicherten Partner aktuelle) Versicherung eines Angehörigen */
+var DependantInsuranceType;
+(function (DependantInsuranceType) {
+    DependantInsuranceType["Own"] = "own";
+    DependantInsuranceType["Family"] = "family";
+    DependantInsuranceType["NotStatutory"] = "notStatutory";
+    DependantInsuranceType["None"] = "none";
+})(DependantInsuranceType || (exports.DependantInsuranceType = DependantInsuranceType = {}));
+var EducationType;
+(function (EducationType) {
+    EducationType["School"] = "school";
+    EducationType["Study"] = "study";
+})(EducationType || (exports.EducationType = EducationType = {}));
 var Salary;
 (function (Salary) {
     Salary[Salary["Undefined"] = 0] = "Undefined";
@@ -59,6 +89,7 @@ var FileType;
     FileType[FileType["Undefined"] = 0] = "Undefined";
     FileType[FileType["Personal_ID"] = 1] = "Personal_ID";
     FileType[FileType["HealthInsurance"] = 2] = "HealthInsurance";
+    FileType[FileType["Certificate"] = 3] = "Certificate";
 })(FileType || (exports.FileType = FileType = {}));
 var ChangeReason;
 (function (ChangeReason) {
