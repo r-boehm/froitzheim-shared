@@ -54,3 +54,8 @@ export interface TextTemplate {
     title: string;
     content: string;
 }
+
+export interface IPaginated<T> {
+    data: T[];
+    total: number;
+}
